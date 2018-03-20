@@ -8,10 +8,10 @@ import java.math.BigDecimal;
  */
 public class Monitor implements IComponent {
     private String name, panelType;
-    private double size;
+    private String size;
     private BigDecimal price;
 
-    public Monitor(String name, String panelType, double size, BigDecimal price) {
+    public Monitor(String name, String panelType, String size, BigDecimal price) {
         this.name = name;
         this.panelType = panelType;
         this.size = size;

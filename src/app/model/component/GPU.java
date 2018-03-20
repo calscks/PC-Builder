@@ -7,13 +7,14 @@ import java.math.BigDecimal;
  * Project Name: PC-Builder.
  */
 public class GPU implements IComponent {
-    private String name, type;
+    private String name;
+    private boolean multiGPU;
     private int size;
     private BigDecimal price;
 
-    public GPU(String name, String type, int size, BigDecimal price) {
+    public GPU(String name, boolean multiGPU, int size, BigDecimal price) {
         this.name = name;
-        this.type = type;
+        this.multiGPU = multiGPU;
         this.size = size;
         this.price = price;
     }
@@ -25,10 +26,9 @@ public class GPU implements IComponent {
 
     @Override
     public String getType() {
-        return type;
+        return String.valueOf(multiGPU);
     }
 
-    // remember, 1TB = 1000GB is standardised for disk drive manufacturers
     @Override
     public String getSize() {
         return size + "GB";

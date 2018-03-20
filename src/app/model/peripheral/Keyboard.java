@@ -6,7 +6,7 @@ import java.math.BigDecimal;
  * Created by Seong Chee Ken on 12/03/2018.
  * Project Name: PC-Builder.
  */
-public class Keyboard {
+public class Keyboard implements IKeyboard {
     private String name, keyType, connectionType;
     private BigDecimal price;
 

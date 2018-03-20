@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="baseStack" prefHeight="700.0" prefWidth="1000.0" stylesheets="@../../resource/style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.control.ComponentControl">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" style="-fx-background-color: #ffffff;">
+         <content>
+            <StackPane fx:id="secondStack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1200.0" prefWidth="1000.0">
+               <children>
+                  <AnchorPane style="-fx-background-color: #ffffff;">
+                     <children>
+                        <GridPane hgap="10.0" layoutX="155.0" layoutY="60.0" prefHeight="559.0" prefWidth="703.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="104.0" />
+                            <ColumnConstraints maxWidth="427.0" minWidth="10.0" prefWidth="412.0" />
+                              <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="122.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="CPU:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Motherboard:" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Cooler:" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Memory:" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="94.0" layoutY="238.0" text="Storage #1:" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="94.0" layoutY="34.0" text="Graphics Card:" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="94.0" layoutY="439.0" text="Power Supply:" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Chassis:" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Monitor:" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXComboBox fx:id="boxCPU" labelFloat="true" prefHeight="35.0" prefWidth="422.0" promptText="Select a processor..." GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <JFXComboBox fx:id="boxMobo" labelFloat="true" prefHeight="35.0" prefWidth="422.0" promptText="Select a motherboard..." GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <JFXComboBox fx:id="boxCooler" labelFloat="true" prefHeight="35.0" prefWidth="422.0" promptText="Select a cooler..." GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <JFXComboBox fx:id="boxRAM" labelFloat="true" prefHeight="35.0" prefWidth="422.0" promptText="Select memory stick..." GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <JFXComboBox fx:id="boxMonitor" labelFloat="true" layoutX="124.0" layoutY="203.0" prefHeight="35.0" prefWidth="422.0" promptText="Select a monitor..." GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <JFXComboBox fx:id="boxCase" labelFloat="true" prefHeight="35.0" prefWidth="422.0" promptText="Select a chassis..." GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <JFXComboBox fx:id="boxStorage1" labelFloat="true" prefHeight="35.0" prefWidth="422.0" promptText="Select a storage device..." GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <JFXComboBox fx:id="boxPSU" labelFloat="true" prefHeight="35.0" prefWidth="422.0" promptText="Select a power supply unit..." GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <JFXComboBox fx:id="boxGPU" labelFloat="true" prefHeight="35.0" prefWidth="422.0" promptText="Select graphics card..." GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <Label fx:id="priceCase" text="Price" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="priceStor1" text="Price" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="pricePSU" text="Price" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="priceCooler" text="Price" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="priceMobo" text="Price" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="priceCPU" text="Price" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="priceMonitor" text="Price" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <children>
+                                    <Label fx:id="priceRAM" text="Price">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <children>
+                                    <JFXComboBox fx:id="boxRAMQuantity" labelFloat="true" prefHeight="35.0" prefWidth="55.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXComboBox>
+                                 </children>
+                              </HBox>
+                              <Label text="Storage #2:" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXComboBox fx:id="boxStorage2" labelFloat="true" prefHeight="35.0" prefWidth="422.0" promptText="Select secondary storage device..." GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <Label fx:id="priceStor2" text="Price" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <children>
+                                    <Label fx:id="priceGPU" text="Price">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <children>
+                                    <JFXComboBox fx:id="boxGPUQuantity" labelFloat="true" prefHeight="35.0" prefWidth="55.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXComboBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </GridPane>
+                        <GridPane hgap="10.0" layoutX="163.0" layoutY="733.0" prefHeight="167.0" prefWidth="685.0">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="120.0" />
+                              <ColumnConstraints maxWidth="427.0" minWidth="10.0" prefWidth="412.0" />
+                              <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="110.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Operating System:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Office:" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Anti-Virus:" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXComboBox fx:id="boxOS" labelFloat="true" prefHeight="35.0" prefWidth="422.0" promptText="Select an operating system..." GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <JFXComboBox fx:id="boxOffice" labelFloat="true" prefHeight="35.0" prefWidth="422.0" promptText="Select an office tool..." GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <JFXComboBox fx:id="boxAV" labelFloat="true" prefHeight="35.0" prefWidth="422.0" promptText="Select an anti-virus application..." GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <Label fx:id="priceAV" text="Price" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="priceOffice" text="Price" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="priceOS" text="Price" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <Label layoutX="84.0" layoutY="698.0" text="SOFTWARE/OS (OPTIONAL)">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="25.0" text="COMPONENT/HARDWARE (OPTIONAL)">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <GridPane hgap="10.0" layoutX="164.0" layoutY="983.0" prefHeight="106.0" prefWidth="685.0">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="122.0" />
+                              <ColumnConstraints maxWidth="428.0" minWidth="10.0" prefWidth="421.0" />
+                              <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="115.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Mouse:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Keyboard:" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXComboBox fx:id="boxMouse" labelFloat="true" prefHeight="35.0" prefWidth="422.0" promptText="Select a mouse..." GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <JFXComboBox fx:id="boxKeyboard" labelFloat="true" prefHeight="35.0" prefWidth="422.0" promptText="Select a keyboard..." GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <Label fx:id="priceKB" text="Price" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="priceMouse" text="Price" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <Label layoutX="85.0" layoutY="953.0" text="PERIPHERALS">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+         </content>
+      </ScrollPane>
+      <JFXButton fx:id="totalPrice" styleClass="rect-button-green" StackPane.alignment="BOTTOM_LEFT">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <StackPane.margin>
+            <Insets bottom="30.0" left="15.0" />
+         </StackPane.margin>
+      </JFXButton>
+   </children>
+</StackPane>

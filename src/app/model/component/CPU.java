@@ -7,11 +7,12 @@ import java.math.BigDecimal;
  * Project Name: PC-Builder.
  */
 public class CPU implements IComponent {
-    private String name, socketType;
+    private String name, family, socketType;
     private BigDecimal price;
 
-    public CPU(String name, String socketType, BigDecimal price) {
+    public CPU(String name, String family, String socketType, BigDecimal price) {
         this.name = name;
+        this.family = family;
         this.socketType = socketType;
         this.price = price;
     }
@@ -21,9 +22,10 @@ public class CPU implements IComponent {
         return name;
     }
 
+    // family means architecture
     @Override
     public String getType() {
-        return socketType;
+        return family;
     }
 
     // size of CPU is equivalent to socket

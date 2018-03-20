@@ -1,7 +1,5 @@
 package app.model.component;
 
-import app.model.FormFactor;
-
 import java.math.BigDecimal;
 
 /**
@@ -10,10 +8,10 @@ import java.math.BigDecimal;
  */
 public class Mobo implements IComponent {
     private String name, socketType;
-    private FormFactor formFactor; //this is not IFormFactor, this is an enum type
+    private EFormFactor formFactor; //this is not FormFactor class, this is an enum
     private BigDecimal price;
 
-    public Mobo(String name, String socketType, FormFactor formFactor, BigDecimal price) {
+    public Mobo(String name, String socketType, EFormFactor formFactor, BigDecimal price) {
         this.name = name;
         this.socketType = socketType;
         this.formFactor = formFactor;

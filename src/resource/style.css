@@ -1,0 +1,361 @@
+/*******************************************************************************
+ *                                                                             *
+ * Buttons  			                                                       *
+ *                                                                             *
+ ******************************************************************************/
+
+.round-button {
+    -fx-pref-width: 70px;
+    -fx-background-color: #3771c1;
+    -fx-background-radius: 70px;
+    -fx-text-fill: #f7ffef;
+    -fx-pref-height: 70px;
+    -fx-min-width: -fx-pref-width;
+    -fx-max-width: -fx-pref-width;
+    -fx-min-height: -fx-pref-height;
+    -fx-max-height: -fx-pref-height;
+    -jfx-button-type: RAISED;
+}
+
+.round-button-smaller {
+    -fx-pref-width: 55px;
+    -fx-background-color: #3771c1;
+    -fx-background-radius: 55px;
+    -fx-pref-height: 55px;
+    -fx-min-width: -fx-pref-width;
+    -fx-max-width: -fx-pref-width;
+    -fx-min-height: -fx-pref-height;
+    -fx-max-height: -fx-pref-height;
+    -jfx-button-type: RAISED;
+}
+
+.round-button .jfx-rippler{
+    -jfx-rippler-fill: rgb(255, 255, 255);
+}
+
+.round-button-smaller .jfx-rippler{
+    -jfx-rippler-fill: rgb(255, 255, 255);
+}
+
+.rect-button-main {
+    -fx-pref-width: 170px;
+    -fx-background-color: #459bd3;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #f7ffef;
+    -fx-pref-height: 48px;
+    -fx-min-width: -fx-pref-width;
+    -fx-max-width: -fx-pref-width;
+    -fx-min-height: -fx-pref-height;
+    -fx-max-height: -fx-pref-height;
+    -jfx-button-type: RAISED;
+}
+
+.rect-button-main .jfx-rippler{
+    -jfx-rippler-fill: rgba(244, 255, 255, 0.8);
+}
+
+.rect-button-red {
+    -fx-pref-width: 170px;
+    -fx-background-color: #9a1b00;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #f7ffef;
+    -fx-pref-height: 48px;
+    -fx-min-width: -fx-pref-width;
+    -fx-max-width: -fx-pref-width;
+    -fx-min-height: -fx-pref-height;
+    -fx-max-height: -fx-pref-height;
+    -jfx-button-type: RAISED;
+}
+
+.rect-button-red .jfx-rippler{
+    -jfx-rippler-fill: rgba(255, 254, 246, 0.8);
+}
+
+.rect-button-green {
+    -fx-pref-width: 170px;
+    -fx-background-color: rgba(0, 154, 6, 0.85);
+    -fx-background-radius: 5px;
+    -fx-text-fill: #f7ffef;
+    -fx-pref-height: 48px;
+    -fx-min-width: -fx-pref-width;
+    -fx-max-width: -fx-pref-width;
+    -fx-min-height: -fx-pref-height;
+    -fx-max-height: -fx-pref-height;
+    -jfx-button-type: RAISED;
+}
+
+.rect-button-green .jfx-rippler{
+    -jfx-rippler-fill: rgba(255, 254, 246, 0.8);
+}
+
+.animated-option-button {
+    -fx-background-color: #efefef;
+    -fx-background-radius: 65px;
+    -fx-pref-height: 65px;
+    -fx-pref-width: 65px;
+    -fx-min-width: -fx-pref-width;
+    -fx-max-width: -fx-pref-width;
+    -fx-min-height: -fx-pref-height;
+    -fx-max-height: -fx-pref-height;
+    -jfx-button-type: RAISED;
+}
+
+.animated-option-button .jfx-rippler{
+    -jfx-rippler-fill: rgb(185, 185, 185);
+}
+
+.left-button {
+    -fx-background-color: #353b48;
+    -fx-text-fill: #EFEFEF;
+    -fx-background-radius: 0px;
+    -jfx-button-type: FLAT;
+    -fx-font-size: 20px
+}
+
+.left-button .jfx-rippler{
+    -jfx-rippler-fill: rgba(255, 255, 255, 0.8);
+}
+
+.jfx-tab-pane .headers-region {
+    -fx-background-color: #459bd3;
+}
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: #459bd3;
+}
+.jfx-tab-pane .tab-selected-line {
+    -fx-stroke: #46aee7;
+    -fx-stroke-width: 3pt;
+}
+
+.jfx-tab-pane .jfx-rippler {
+    -jfx-rippler-fill: rgba(255, 255, 255, 0.8);
+}
+
+/******************************************************************************/
+
+.main-icon{
+    -fx-fill: rgba(255,255,255, .87);
+}
+
+.sub-icon{
+    -fx-fill: rgba(70, 174, 231, 0.83);
+}
+
+.jfx-hamburger {
+    -fx-padding: 10.0;
+    -fx-spacing: 4px;
+    -fx-cursor: hand;
+}
+
+.jfx-hamburger StackPane {
+    -fx-pref-width: 30px;
+    -fx-pref-height: 4px;
+    -fx-background-color: #FFF;
+    -fx-background-radius: 5px;
+}
+
+.jfx-snackbar-content {
+    -fx-background-color: #323232;
+    -fx-background-radius: 5px 5px 0px 0px;
+}
+
+.jfx-snackbar-toast {
+    -fx-text-fill: WHITE;
+}
+
+.jfx-snackbar-action {
+    -fx-text-fill: #ff4081;
+}
+
+.tree-table-view {
+    -fx-tree-table-color: rgba(255, 159, 0, 0.34);
+    -fx-tree-table-rippler-color: rgba(255, 183, 0, 0.4);
+}
+
+.tree-table-view:focused .tree-table-row-cell:selected {
+    -fx-background-color: -fx-tree-table-color;
+    -fx-table-cell-border-color: -fx-tree-table-color;
+}
+
+.title-text {
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-font-weight: BOLD;
+    -fx-font-smoothing-type: gray;
+}
+
+.desc-text {
+    -fx-text-fill: rgba(236, 236, 236, 1);
+    -fx-font-smoothing-type: gray;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Toggle Button		                                                       *
+ *                                                                             *
+ ******************************************************************************/
+
+.jfx-toggle-button,
+.jfx-toggle-button:armed,
+.jfx-toggle-button:hover,
+.jfx-toggle-button:focused,
+.jfx-toggle-button:selected,
+.jfx-toggle-button:focused:selected {
+    -fx-background-color: TRANSPARENT, TRANSPARENT, TRANSPARENT, TRANSPARENT;
+    -fx-background-radius: 3px;
+    -fx-background-insets: 0px;
+
+    -jfx-toggle-color: #46aee7;
+    -jfx-untoggle-color: #FAFAFA;
+    -jfx-toggle-line-color: derive(-jfx-toggle-color, 65%);
+    -jfx-untoggle-line-color: #999999;
+    -jfx-size: 10;
+}
+
+.jfx-toggle-button .jfx-rippler {
+    -jfx-rippler-fill: rgba(70, 174, 231, 0.5);
+}
+
+.jfx-toggle-button Circle {
+    -fx-fill: -jfx-untoggle-color;
+}
+
+.jfx-toggle-button:selected Circle {
+    -fx-fill: -jfx-toggle-color;
+}
+
+.jfx-toggle-button Line {
+    -fx-stroke: -jfx-untoggle-line-color;
+}
+.jfx-toggle-button:selected Line{
+    -fx-stroke: -jfx-toggle-line-color;
+}
+
+.jfx-toggle-button Circle{
+    -fx-fill: -jfx-untoggle-color;
+}
+
+.jfx-toggle-button:selected Circle{
+    -fx-fill: -jfx-toggle-color;
+}
+
+.jfx-toggle-button .jfx-rippler {
+    -jfx-rippler-fill: rgba(70, 174, 231, 0.5);
+}
+
+.jfx-toggle-button:selected .jfx-rippler {
+    -jfx-rippler-fill: -jfx-toggle-line-color;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Combo box			                                                       *
+ *                                                                             *
+ ******************************************************************************/
+
+.jfx-combo-box{
+    -jfx-focus-color: #38a2f3;
+    -jfx-unfocus-color: #3771c1;
+    -fx-prompt-text-fill: #4d4d4d;
+    -fx-font-size: 13;
+}
+
+.jfx-combo-box,
+.jfx-combo-box:focused,
+.jfx-combo-box:editable,
+.jfx-combo-box:editable:focused{
+    -fx-background-color: TRANSPARENT, TRANSPARENT, TRANSPARENT, TRANSPARENT;
+    -fx-background-radius: 3px;
+    -fx-background-insets: 0px;
+}
+
+.jfx-combo-box .combo-box-button-container{
+    -fx-background-color:TRANSPARENT;
+}
+
+.jfx-combo-box:error {
+    -jfx-focus-color: #D34336;
+    -jfx-unfocus-color: #D34336;
+}
+
+.jfx-combo-box > .arrow-button,
+.jfx-combo-box:editable > .arrow-button,
+.jfx-combo-box:editable:focused > .arrow-button{
+    -fx-background-color: TRANSPARENT;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Scroll Bar			                                                       *
+ *                                                                             *
+ ******************************************************************************/
+
+.scroll-bar:vertical > .track-background, .scroll-bar:horizontal > .track-background {
+    -fx-background-color: #F1F1F1;
+    -fx-background-insets: 0.0;
+}
+
+.scroll-bar:vertical > .thumb, .scroll-bar:horizontal > .thumb {
+    -fx-background-color: #BCBCBC;
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 1.0;
+}
+
+.scroll-bar > .increment-button, .scroll-bar > .decrement-button {
+    -fx-padding: 5 2 5 2;
+}
+
+.scroll-bar > .increment-button, .scroll-bar > .decrement-button, .scroll-bar:hover > .increment-button, .scroll-bar:hover > .decrement-button {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar > .increment-button > .increment-arrow, .scroll-bar > .decrement-button > .decrement-arrow {
+    -fx-background-color: rgb(150.0, 150.0, 150.0);
+}
+
+.scroll-bar > .increment-button > .increment-arrow {
+    -fx-shape: "M298 426h428l-214 214z";
+}
+
+.scroll-bar > .decrement-button > .decrement-arrow {
+    -fx-shape: "M298 598l214-214 214 214h-428z";
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Scroll Pane			                                                       *
+ *                                                                             *
+ ******************************************************************************/
+
+.scroll-pane {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.scroll-pane:focused {
+    -fx-background-insets: 0;
+}
+
+.scroll-pane .corner {
+    -fx-background-insets: 0;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Colour   			                                                       *
+ *                                                                             *
+ ******************************************************************************/
+
+.gray {
+    -fx-background-color: #4a5559;
+    -fx-text-fill: rgba(223, 223, 223, 0.87);
+}
+
+.light-green {
+    -fx-background-color: #b2ff59;
+    -fx-text-fill: rgba(0, 0, 0, 0.87);
+}
+
+.blue {
+    -fx-background-color: #459bd3;
+    -fx-text-fill: rgba(255, 255, 255, 0.87);
+}

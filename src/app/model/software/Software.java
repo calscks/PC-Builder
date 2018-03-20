@@ -9,32 +9,32 @@ import java.math.BigDecimal;
  * This class needs to adapt with IComponent
  */
 public class Software implements ISoftware {
-    private String name, swType;
+    private String name, category;
     private BigDecimal price;
 
-    public Software(String name, String swType, BigDecimal price) {
+    public Software(String name, String category, BigDecimal price) {
         this.name = name;
-        this.swType = swType;
+        this.category = category;
         this.price = price;
     }
 
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override
-    public String getSwType() {
-        return null;
+    public String getSwCategory() {
+        return category;
     }
 
     @Override
     public BigDecimal getPrice() {
-        return null;
+        return price;
     }
 
     @Override
     public void setPrice(BigDecimal price) {
-
+        this.price = price;
     }
 }

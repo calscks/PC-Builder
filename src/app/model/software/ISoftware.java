@@ -8,7 +8,7 @@ import java.math.BigDecimal;
  */
 public interface ISoftware {
     String getName();
-    String getSwType();
+    String getSwCategory();
     BigDecimal getPrice();
     void setPrice(BigDecimal price);
 }

@@ -7,13 +7,13 @@ import java.math.BigDecimal;
  * Project Name: PC-Builder.
  */
 public class RAM implements IComponent{
-    private String name, type;
+    private String name, channelType;
     private int size;
     private BigDecimal price;
 
-    public RAM(String name, String type, int size, BigDecimal price) {
+    public RAM(String name, String channelType, int size, BigDecimal price) {
         this.name = name;
-        this.type = type;
+        this.channelType = channelType;
         this.size = size;
         this.price = price;
     }
@@ -25,7 +25,7 @@ public class RAM implements IComponent{
 
     @Override
     public String getType() {
-        return type;
+        return channelType;
     }
 
     @Override

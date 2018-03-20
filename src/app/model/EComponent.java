@@ -6,7 +6,8 @@ package app.model;
  */
 public enum EComponent {
     CPU,
-    COOLER,
+    AIRCOOLER,
+    AIOCOOLER,
     GPU,
     MOBO,
     RAM,
