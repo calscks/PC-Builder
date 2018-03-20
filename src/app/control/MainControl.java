@@ -1,6 +1,5 @@
 package app.control;
 
-import app.model.Computer;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXDialog;
 import javafx.fxml.FXMLLoader;

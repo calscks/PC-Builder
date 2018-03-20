@@ -2,6 +2,7 @@ package app.control;
 
 import app.model.Computer;
 import app.pattern.strategy.Compatibility;
+import app.pattern.strategy.CoolerMoboCmp;
 import app.pattern.strategy.SocketCmp;
 import com.jfoenix.controls.JFXButton;
 import javafx.scene.control.Label;
@@ -36,6 +37,14 @@ public class CompatibleControl {
                 cmpCPUMobo.setText("Compatible");
             else
                 cmpCPUMobo.setText("Incompatible");
+        }
+
+        if (!computer.getCooler().getType().equals("") && !computer.getMobo().getType().equals("")){
+            compatibility = new CoolerMoboCmp(computer.getCooler().getType(), computer.getMobo().getType());
+            if (compatibility.isCompatible())
+                cmpCoolerMobo.setText("Compatible");
+            else
+                cmpCoolerMobo.setText("Incompatible");
         }
     }
 }
