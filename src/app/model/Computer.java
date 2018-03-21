@@ -16,8 +16,9 @@ public class Computer {
     private ISoftware os, av, office;
     private Keyboard keyboard;
     private Mouse mouse;
+    private int ramCount, gpuCount;
 
-    public Computer(IComponent cpu, IComponent cooler, IComponent mobo, IComponent ram, IComponent gpu, IComponent psu, IComponent storage1, IComponent storage2, IComponent chassis, IComponent monitor, ISoftware os, ISoftware av, ISoftware office, Keyboard keyboard, Mouse mouse) {
+    public Computer(IComponent cpu, IComponent cooler, IComponent mobo, IComponent ram, IComponent gpu, IComponent psu, IComponent storage1, IComponent storage2, IComponent chassis, IComponent monitor, ISoftware os, ISoftware av, ISoftware office, Keyboard keyboard, Mouse mouse, int ramCount, int gpuCount) {
         this.cpu = cpu;
         this.cooler = cooler;
         this.mobo = mobo;
@@ -33,11 +34,28 @@ public class Computer {
         this.office = office;
         this.keyboard = keyboard;
         this.mouse = mouse;
+        this.ramCount = ramCount;
+        this.gpuCount = gpuCount;
     }
 
     public Computer() {
     }
 
+    public int getRamCount() {
+        return ramCount;
+    }
+
+    public void setRamCount(int ramCount) {
+        this.ramCount = ramCount;
+    }
+
+    public int getGpuCount() {
+        return gpuCount;
+    }
+
+    public void setGpuCount(int gpuCount) {
+        this.gpuCount = gpuCount;
+    }
     public IComponent getCpu() {
         return cpu;
     }
@@ -123,7 +141,7 @@ public class Computer {
     }
 
     public void setOs(IComponent os) {
-        this.os = new Software(os.getName(), os.getType(), os.getPrice());;
+        this.os = new Software(os.getName(), os.getType(), os.getPrice());
     }
 
     public ISoftware getAv() {

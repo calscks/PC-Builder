@@ -8,7 +8,7 @@ import app.model.component.IComponent;
  * Project Name: PC-Builder.
  */
 public class GPUCmp implements Compatibility {
-    private GPU gpu;
+    private IComponent gpu;
     private int GPUCount;
 
     public GPUCmp(GPU gpu, int GPUCount) {
@@ -17,10 +17,8 @@ public class GPUCmp implements Compatibility {
     }
 
     public GPUCmp(IComponent gpu, int GPUCount) {
-        this.gpu = (GPU) gpu;
-        if (!this.gpu.getType().equalsIgnoreCase("true") ||
-                !this.gpu.getType().equalsIgnoreCase("false"))
-            throw new IllegalArgumentException("IComponent inserted is not a valid GPU. It might be something else");
+        this.gpu = gpu;
+        this.GPUCount = GPUCount;
     }
 
     @Override

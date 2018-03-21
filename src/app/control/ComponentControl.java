@@ -187,6 +187,8 @@ public class ComponentControl {
                 .with(Computer::setAv, boxAV.getSelectionModel().getSelectedItem())
                 .with(Computer::setMouse, boxMouse.getSelectionModel().getSelectedItem())
                 .with(Computer::setKeyboard, boxKeyboard.getSelectionModel().getSelectedItem())
+                .with(Computer::setRamCount, boxRAMQuantity.getSelectionModel().getSelectedItem())
+                .with(Computer::setGpuCount, boxGPUQuantity.getSelectionModel().getSelectedItem())
                 .build();
     }
 

@@ -32,7 +32,7 @@ public class MainControl {
                 try {
                     dialog = new JFXDialog(baseStackPane, diLoader.load(), JFXDialog.DialogTransition.TOP);
                     CompatibleControl control = diLoader.getController();
-                    control.setComputer(c.getComputer());
+                    control.set(c.getComputer(), dialog);
                     control.call();
                     dialog.show();
                 } catch (IOException e) {
