@@ -65,10 +65,12 @@ public class ComponentControl {
     public Label priceMouse;
     public JFXButton totalPrice;
 
+    private List<JFXComboBox<IComponent>> boxList;
+
     @SuppressWarnings("unchecked")
     public void initialize() throws SQLException {
         // A list of each combo box reference (and price list for label references)
-        List<JFXComboBox<IComponent>> boxList = Arrays.asList(boxCPU, boxMobo, boxCooler, boxRAM, boxGPU,
+        boxList = Arrays.asList(boxCPU, boxMobo, boxCooler, boxRAM, boxGPU,
                 boxPSU, boxStorage1, boxStorage2, boxCase, boxMonitor,
                 boxOS, boxOffice, boxAV, boxMouse, boxKeyboard);
         List<Label> priceList = Arrays.asList(priceCPU, priceMobo, priceCooler, priceRAM, priceGPU,
@@ -109,7 +111,6 @@ public class ComponentControl {
             );
 
             cb.getItems().add(empty());
-            cb.getSelectionModel().selectFirst();
         }
 
         /* Modifies the total price shown for total price button.
@@ -232,6 +233,13 @@ public class ComponentControl {
                 price = price.multiply(BigDecimal.valueOf(comboBox.getSelectionModel().getSelectedItem()));
                 priceLabel.setText(price.setScale(2, RoundingMode.HALF_UP).toString());
             }
+        });
+    }
+
+    public void selectFirst(){
+        boxList.forEach(cb -> {
+            if (cb.getSelectionModel().getSelectedIndex() == -1)
+                cb.getSelectionModel().selectFirst();
         });
     }
 }

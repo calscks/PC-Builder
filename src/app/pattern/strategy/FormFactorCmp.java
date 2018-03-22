@@ -13,12 +13,13 @@ public class FormFactorCmp implements Compatibility {
     private EFormFactor formFactor;
 
     /**
-     * constructs a strategy specifically for checking total selected RAM count and GPU count.
+     * constructs a strategy specifically for checking total selected
+     * RAM count and GPU count.
      * @param GPUCount GPU count based on the number of selected GPU.
      * @param RAMCount RAM count based on the number of selected RAM.
      * @param channelType RAM's channel type.
-     * @param formFactor Form Factor enum which should be returned from {@link app.model.component.Mobo}'s
-     *           {@code getSize()}.
+     * @param formFactor Form Factor enum which should be returned from
+     * {@link app.model.component.Mobo}'s {@code getSize()}.
      */
     public FormFactorCmp(int GPUCount, int RAMCount, String channelType, EFormFactor formFactor) {
         this.GPUCount = GPUCount;
@@ -31,7 +32,6 @@ public class FormFactorCmp implements Compatibility {
     public boolean isCompatible() {
         //using FormFactory
         IFormFactor formFactorObj = FormFactory.createFormFactor(formFactor);
-        if (formFactorObj == null) throw new IllegalArgumentException("Form factor enum value is not recognised.");
         if (channelType.equalsIgnoreCase("dual"))
             RAMCount *= 2;
         else if (channelType.equalsIgnoreCase("quad"))

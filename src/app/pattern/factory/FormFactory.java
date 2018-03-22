@@ -17,6 +17,6 @@ public class FormFactory {
             return new MATXFactor();
         else if (formFactor == EFormFactor.ITX)
             return new ITXFactor();
-        return null;
+        throw new IllegalArgumentException("EFormFactor value is not recognised.");
     }
 }

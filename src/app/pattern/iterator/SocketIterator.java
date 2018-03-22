@@ -25,16 +25,15 @@ public class SocketIterator implements Iterator {
     @Override
     public boolean hasNext() {
         while (index < sockets.size()){
-
             SocketType socket = sockets.get(index);
-
+            // if all, just return true and stop
             if (brand == Brand.ALL)
                 return true;
-
+            // if specific brand found, returns true
             if (socket.getBrand().equals(brand))
                 return true;
             else
-                index++;
+                index++; //go to next index
         }
         return false;
     }

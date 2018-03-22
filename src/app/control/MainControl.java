@@ -32,6 +32,7 @@ public class MainControl {
                 try {
                     dialog = new JFXDialog(baseStackPane, diLoader.load(), JFXDialog.DialogTransition.TOP);
                     CompatibleControl control = diLoader.getController();
+                    c.selectFirst();
                     control.set(c.getComputer(), dialog);
                     control.call();
                     dialog.show();

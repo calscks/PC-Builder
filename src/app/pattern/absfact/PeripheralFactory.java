@@ -32,7 +32,7 @@ public class PeripheralFactory implements AbsFactory<String> {
             return new MouseAdapter(new Mouse(name, Integer.parseInt(type), size, price));
         else if (component.equalsIgnoreCase("keyboard"))
             return new KeyboardAdapter(new Keyboard(name, type, size, price));
-        return null;
+        throw new IllegalArgumentException("String component doesn't match anything.");
     }
 
     @Override

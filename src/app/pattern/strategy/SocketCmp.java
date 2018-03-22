@@ -8,7 +8,8 @@ public class SocketCmp implements Compatibility {
     private String cpuSocket, moboSocket;
 
     /**
-     * constructs the CPUSocket strategy to use as compatibility checker between CPU and Motherboard.
+     * constructs the CPUSocket strategy to use as
+     * compatibility checker between CPU and Motherboard.
      * @param cpuSocket CPUSocket from CPU
      * @param moboSocket CPUSocket from Motherboard
      */

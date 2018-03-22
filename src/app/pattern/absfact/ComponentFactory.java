@@ -31,6 +31,7 @@ public class ComponentFactory implements AbsFactory<EComponent> {
         connection = DBConnection.getInstance();
     }
 
+    // creates an IComponent based on the EComponent enumeration value
     @Override
     public IComponent createComponent(EComponent component, String name, String type, String size, BigDecimal price) {
         if (component == EComponent.CPU)
